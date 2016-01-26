@@ -1,0 +1,418 @@
+.setting-add-tags {
+  padding: 0 50px;
+  height: 100px; }
+  .setting-add-tags .setting-add-tags-bind {
+    margin: 10px 0;
+    width: 200px;
+    height: 250px;
+    border: 1px solid #c0c0c1;
+    overflow-y: auto; }
+
+.setting-add-map .setting-add-map-point-set {
+  width: 100%;
+  height: 290px;
+  border: 1px solid gray;
+  padding: 0 0; }
+
+.setting-add-template {
+  padding-left: 20px; }
+
+.setting-asset-search {
+  float: right;
+  width: 150px; }
+  .setting-asset-search .search-group {
+    width: 150px;
+    height: 24px;
+    padding: 0 32px 0 11px;
+    border: 1px solid gray;
+    background-color: #ffffff;
+    float: left;
+    position: relative;
+    margin-right: 30px; }
+    .setting-asset-search .search-group input {
+      height: 22px;
+      font-size: 12px;
+      width: 100%;
+      line-height: 22px;
+      border: none;
+      outline: none; }
+    .setting-asset-search .search-group button.bat-btn-icon {
+      display: block;
+      height: 22px;
+      width: 30px;
+      position: absolute;
+      border: none;
+      border-left: 1px solid gray;
+      right: -3px;
+      top: 0;
+      margin: 0; }
+
+#fileToUpload {
+  display: none; }
+
+.setting-event-add-action {
+  width: 100%;
+  background-color: #f7f7f5;
+  border: 1px solid gray; }
+  .setting-event-add-action .setting-event-add-action-t {
+    width: 100%;
+    background-color: #b8b9c4;
+    position: relative; }
+    .setting-event-add-action .setting-event-add-action-t .setting-event-add-action-t-btn {
+      position: absolute;
+      top: 2px;
+      right: 4px; }
+  .setting-event-add-action .setting-event-add-action-m {
+    width: 100%;
+    padding: 10px; }
+
+.setting-event-add-schedule {
+  display: inline-block;
+  width: 60px;
+  height: 22px;
+  background-color: saddlebrown; }
+
+.setting-event-info {
+  width: 100%;
+  height: auto;
+  overflow-y: auto; }
+  .setting-event-info .setting-event-info-action {
+    width: 45%;
+    height: auto;
+    margin: 10px;
+    float: left;
+    background-color: #f7f7f5;
+    border: 1px solid gray; }
+    .setting-event-info .setting-event-info-action .row {
+      padding: 2px 0; }
+    .setting-event-info .setting-event-info-action .setting-event-add-action-t {
+      width: 100%;
+      background-color: #b8b9c4;
+      position: relative;
+      padding: 2px 10px; }
+    .setting-event-info .setting-event-info-action .setting-event-add-action-m {
+      width: 100%;
+      padding: 10px;
+      word-break: break-all; }
+
+.setting-event-details-list {
+  width: 800px;
+  height: auto;
+  background-color: #ffffff;
+  overflow-y: auto;
+  padding: 5px 10px;
+  /* .setting-event-details-left{
+    width:400px ;
+    margin-left:20px;
+    margin-top: 10px;
+    line-height: 22px;
+    float: left;
+    word-break:break-all;
+    ul{
+      margin-left: 30px;
+      list-style-type: none;
+    }
+  }*/ }
+
+textarea {
+  resize: none; }
+
+.setting-event-search {
+  float: right;
+  width: 150px; }
+  .setting-event-search .search-group {
+    width: 150px;
+    height: 24px;
+    padding: 0 32px 0 11px;
+    border: 1px solid gray;
+    background-color: #ffffff;
+    float: left;
+    position: relative;
+    margin-right: 30px; }
+    .setting-event-search .search-group input {
+      height: 21px;
+      font-size: 12px;
+      width: 100%;
+      border: none;
+      outline: none; }
+    .setting-event-search .search-group button.bat-btn-icon {
+      display: block;
+      height: 22px;
+      width: 30px;
+      position: absolute;
+      border: none;
+      border-left: 1px solid gray;
+      right: -3px;
+      top: 0;
+      margin: 0; }
+
+.setting-map-map {
+  width: 100%;
+  position: relative;
+  overflow: auto;
+  background-color: #ffffff; }
+  .setting-map-map .setting-map-map-tool {
+    width: 100%;
+    height: 36px;
+    border-bottom: 1px solid gray;
+    position: absolute;
+    left: 0;
+    top: 0; }
+
+.setting-map-add .setting-map-add-each {
+  width: 300px;
+  background-color: #f7f7f5;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: 1px solid gray;
+  padding: 35px 20px 5px 20px;
+  position: relative; }
+  .setting-map-add .setting-map-add-each .setting-map-add-each-title {
+    width: 100%;
+    height: 30px;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .setting-map-add .setting-map-add-each .setting-map-add-each-title .setting-map-add-each-close {
+      position: absolute;
+      right: 0px;
+      top: 5px; }
+  .setting-map-add .setting-map-add-each .setting-map-add-each-info {
+    padding: 5px; }
+
+.setting-map-add .setting-map-add-btn {
+  padding: 5px 0 5px 10px; }
+
+.setting-map-img-box, .setting-map-tree-box {
+  width: 300px;
+  position: relative;
+  float: left;
+  margin: 10px 20px 20px 20px;
+  cursor: pointer; }
+  .setting-map-img-box .title, .setting-map-tree-box .title {
+    padding: 5px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  .setting-map-img-box .img, .setting-map-tree-box .img {
+    overflow: auto;
+    padding: 5px;
+    width: 300px;
+    height: 200px;
+    line-height: 190px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center; }
+    .setting-map-img-box .img img, .setting-map-tree-box .img img {
+      height: 100%; }
+
+.setting-map-info-box {
+  padding: 5px 10px; }
+
+.alarm-main {
+  width: 100%;
+  position: relative;
+  height: 100px; }
+  .alarm-main .alarm-panel {
+    margin: 0;
+    height: 100%; }
+    .alarm-main .alarm-panel .alarm-tool-bar {
+      height: 35px;
+      line-height: 35px;
+      background-color: #ededed;
+      font-size: 12px; }
+      .alarm-main .alarm-panel .alarm-tool-bar .alarm-tool-search {
+        float: right;
+        width: 150px;
+        height: 35px;
+        margin-right: 15px; }
+        .alarm-main .alarm-panel .alarm-tool-bar .alarm-tool-search .search-group {
+          width: 150px;
+          height: 24px;
+          padding: 0 32px 15px 11px;
+          border: 1px solid gray;
+          background-color: #ffffff;
+          float: left;
+          position: relative;
+          margin-right: 30px;
+          margin-top: 5px; }
+          .alarm-main .alarm-panel .alarm-tool-bar .alarm-tool-search .search-group input {
+            height: 22px;
+            font-size: 12px;
+            width: 100px;
+            border: none;
+            line-height: 22px;
+            position: absolute;
+            outline: none; }
+          .alarm-main .alarm-panel .alarm-tool-bar .alarm-tool-search .search-group button.bat-btn-icon {
+            display: block;
+            height: 22px;
+            width: 30px;
+            position: absolute;
+            border: none;
+            border-left: 1px solid gray;
+            right: -3px;
+            top: 0;
+            margin: 0; }
+      .alarm-main .alarm-panel .alarm-tool-bar .alarm-btn-img {
+        float: left;
+        margin: 5px 3px; }
+      .alarm-main .alarm-panel .alarm-tool-bar .alarm-left-span {
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 15px; }
+        .alarm-main .alarm-panel .alarm-tool-bar .alarm-left-span input {
+          width: 100px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 12px;
+          vertical-align: middle; }
+        .alarm-main .alarm-panel .alarm-tool-bar .alarm-left-span .position-search-button {
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 12px;
+          vertical-align: middle; }
+        .alarm-main .alarm-panel .alarm-tool-bar .alarm-left-span .time_refresh_button_left {
+          width: 80px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 12px;
+          vertical-align: middle; }
+      .alarm-main .alarm-panel .alarm-tool-bar .alarm-right-span {
+        float: right;
+        margin-right: 15px; }
+        .alarm-main .alarm-panel .alarm-tool-bar .alarm-right-span input {
+          width: 100px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 12px;
+          vertical-align: middle; }
+        .alarm-main .alarm-panel .alarm-tool-bar .alarm-right-span .time_refresh_button_right {
+          width: 80px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 12px;
+          vertical-align: middle; }
+    .alarm-main .alarm-panel .alarm-list {
+      width: 100%;
+      background-color: salmon; }
+
+.alarm-details-list {
+  width: 100%;
+  height: 170px;
+  background-color: #ffffff;
+  overflow-y: auto; }
+  .alarm-details-list .alarm-details-left {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 5px;
+    line-height: 22px;
+    float: left;
+    word-break: break-all; }
+    .alarm-details-list .alarm-details-left ul {
+      margin-left: 30px;
+      list-style-type: none; }
+  .alarm-details-list .alarm-details-list-main {
+    width: 700px;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 22px;
+    float: left; }
+
+.alarm-divFont {
+  width: 45px;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  margin: auto;
+  text-align: center; }
+  .alarm-divFont .divFont {
+    text-align: right; }
+
+.alarm-divRed, .alarm-divOrange, .alarm-divYellow, .alarm-divGreen {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  float: left;
+  background-color: red; }
+
+.alarm-divOrange {
+  background-color: Orange; }
+
+.alarm-divYellow {
+  background-color: yellow; }
+
+.alarm-divGreen {
+  background-color: blue; }
+
+textarea {
+  resize: none; }
+
+* {
+  margin: 0px;
+  top: 10px; }
+
+.sprite-button {
+  background: url("../images/i_add.png"); }
+  .sprite-button .button {
+    background: url("../images/i_close_red.png"); }
+
+.sprite-input {
+  background: url("../images/i_exciter.png"); }
+  .sprite-input .button {
+    background: url("../images/i_add.png"); }
+
+.sprite-images {
+  background: url("../images/i_floder.png"); }
+  .sprite-images .button {
+    background: url("../images/i_alarm.png"); }
+
+.sprite-xx {
+  background: url("../images/i_home.png"); }
+  .sprite-xx .button {
+    background: url("../images/i_home.png"); }
+  .sprite-xx .sssss {
+    background: url("../images/i_refresh_s.png"); }
+
+html, body, .wrap, .sign {
+  height: 100%; }
+
+.sign {
+  background-color: #24272D;
+  padding-bottom: 200px; }
+  .sign .sign-title {
+    color: #FDFCFC;
+    font-size: 24px;
+    background-color: #364763;
+    padding: 5px 0; }
+  .sign .sign-panel {
+    background-color: #F7F8F7;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px; }
+    .sign .sign-panel .input-group-box {
+      padding: 15px; }
+      .sign .sign-panel .input-group-box .input-group {
+        margin-bottom: 15px; }
+    .sign .sign-panel .sign-panel-title {
+      padding: 15px 15px 0 15px;
+      color: #445674;
+      font-size: 20px; }
+    .sign .sign-panel .line {
+      width: 100%;
+      border-top: solid 1px #ccc; }
+  .sign .default {
+    width: 100%;
+    height: 20px; }
+    .sign .default input {
+      margin: 0 10px; }
+    .sign .default button {
+      left: 10px; }
+    .sign .default form {
+      margin: 10px; }

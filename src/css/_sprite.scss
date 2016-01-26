@@ -1,0 +1,33 @@
+*{
+	margin: 0px;
+	top:10px;
+}
+.sprite-button{
+    background: url("../images/i_add.png");
+    .button{
+    	background: url("../images/i_close_red.png");
+    }
+}
+.sprite-input{
+    background: url("../images/i_exciter.png");
+     .button{
+    	background: url("../images/i_add.png");
+    }
+}
+
+.sprite-images{
+     background: url("../images/i_floder.png");
+      .button{
+    	background: url("../images/i_alarm.png");
+    }
+ }
+
+.sprite-xx{
+    background: url("../images/i_home.png");
+     .button{
+    	background: url("../images/i_home.png");
+    }
+    .sssss{
+      background: url("../images/i_refresh_s.png");
+    }
+}
