@@ -1,0 +1,121 @@
+@charset "utf-8";
+
+
+//事件编辑 动作添加
+.setting-event-add-action{
+  width: 100%;
+//  height: 200px;
+
+  background-color: #f7f7f5;
+  border: 1px solid gray;
+  .setting-event-add-action-t{
+    width: 100%;
+    background-color: #b8b9c4;
+    position: relative;
+    .setting-event-add-action-t-btn{
+      position: absolute;
+      top: 2px;
+      right: 4px;
+    }
+  }
+  .setting-event-add-action-m{
+    width: 100%;
+    padding: 10px;
+
+
+  }
+}
+.setting-event-add-schedule{
+  display: inline-block;
+  width: 60px;
+  height: 22px;
+  background-color: saddlebrown;
+}
+
+.setting-event-info{
+  width: 100%;
+  height:auto;
+  overflow-y: auto;
+  .setting-event-info-action{
+    width: 45%;
+    height: auto;
+    margin: 10px;
+    float: left;
+    background-color: #f7f7f5;
+    border: 1px solid gray;
+    .row{
+      padding: 2px 0;
+    }
+    .setting-event-add-action-t{
+      width: 100%;
+      background-color: #b8b9c4;
+      position: relative;
+      padding: 2px 10px;
+    }
+    .setting-event-add-action-m{
+      width: 100%;
+      padding: 10px;
+      word-break:break-all;
+    }
+  }
+}
+.setting-event-details-list {
+  width: 800px;
+  height:auto;
+  background-color:#ffffff;
+  overflow-y: auto;
+  padding: 5px 10px;
+ /* .setting-event-details-left{
+    width:400px ;
+    margin-left:20px;
+    margin-top: 10px;
+    line-height: 22px;
+    float: left;
+    word-break:break-all;
+    ul{
+      margin-left: 30px;
+      list-style-type: none;
+    }
+  }*/
+}
+
+textarea{
+  resize: none;
+}
+
+
+.setting-event-search{
+  float: right;
+  width:150px;
+  //搜索
+  .search-group{
+    width: 150px;
+    height: 24px;
+   
+    padding: 0 32px 0 11px;
+    border: 1px solid gray;
+    background-color: #ffffff;
+    float: left;
+    position: relative;
+    margin-right: 30px;
+    input{
+      height: 21px;
+      font-size: 12px;
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+    button.bat-btn-icon{
+      display: block;
+      height: 22px;
+      width: 30px;
+      position: absolute;
+
+      border: none;
+      border-left: 1px solid gray;
+      right: -3px;
+      top: 0;
+      margin: 0;
+    }
+  }
+}

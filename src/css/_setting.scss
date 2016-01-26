@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+//添加资产页面 绑定标签框
+.setting-add-tags{
+  padding: 0 50px;
+  height: 100px;
+  //显示绑定的标签
+  .setting-add-tags-bind{
+    margin: 10px 0;
+    width: 200px;
+    height: 250px;
+    border: 1px solid #c0c0c1;
+    overflow-y: auto;
+  }
+}
+//设置资产为静态时的地图设置
+.setting-add-map{
+ // padding-left: 20px;
+  .setting-add-map-point-set{
+    width: 100%;
+    height: 290px;
+    border: 1px solid gray;
+    padding: 0 0;
+  }
+}
+//设置资产温度
+.setting-add-template{
+  padding-left: 20px;
+}
+
+
+.setting-asset-search{
+  float: right;
+  width: 150px;
+  //搜索
+
+  .search-group{
+    width: 150px;
+    height: 24px;
+   
+    padding: 0 32px 0 11px;
+    border: 1px solid gray;
+    background-color: #ffffff;
+    float: left;
+    position: relative;
+    margin-right: 30px;
+    input{
+      height: 22px;
+      font-size: 12px;
+      width: 100%;
+      line-height: 22px;
+      border: none;
+      outline: none;
+    }
+    button.bat-btn-icon{
+      display: block;
+      height: 22px;
+      width: 30px;
+      position: absolute;
+   
+      border: none;
+      border-left: 1px solid gray;
+      right: -3px;
+      top: 0;
+      margin: 0;
+    }
+
+  }
+}
+#fileToUpload{
+  display:none ;
+}

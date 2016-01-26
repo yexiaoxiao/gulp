@@ -1,0 +1,193 @@
+
+.alarm-main {
+  width: 100%;
+  position: relative;
+  height: 100px;
+
+  //内容区域
+  .alarm-panel {
+    margin: 0;
+    height: 100%;
+    // background-color: saddlebrown;
+
+    .alarm-tool-bar {
+      height: 35px;
+      // margin: auto;
+      line-height: 35px;
+      background-color: #ededed;
+      font-size: 12px;
+      //padding: 3px 10px;
+      .alarm-tool-search{
+        float: right;
+        width:150px;
+        height: 35px;
+        margin-right: 15px;
+        //搜索
+        .search-group{
+          width: 150px;
+          height: 24px;
+         
+          padding: 0 32px 15px 11px;
+          //padding-left: 11px;
+          border: 1px solid gray;
+          background-color: #ffffff;
+          float: left;
+          position: relative;
+          margin-right: 30px;
+          margin-top:5px;
+
+          input{
+            height: 22px;
+            font-size: 12px;
+            width: 100px;
+            border: none;
+            line-height: 22px;
+            position: absolute;
+            outline: none;
+            //top: 3px;
+            //left: 11px;
+          }
+
+          button.bat-btn-icon{
+            display: block;
+            height: 22px;
+            width: 30px;
+            position: absolute;
+       
+            border: none;
+            border-left: 1px solid gray;
+            right: -3px;
+            top: 0;
+            margin: 0;
+          }
+        }
+      }
+
+
+      .alarm-btn-img {
+        float: left;
+        margin: 5px 3px;
+      }
+      .alarm-left-span {
+        float: left;
+        font-size: 14px;
+        font-weight: bold;
+        margin-left: 15px;
+
+        input {
+          width: 100px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 12px;
+          vertical-align: middle
+        }
+
+        .position-search-button {
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 12px;
+          vertical-align: middle;
+        }
+
+        .time_refresh_button_left {
+          width: 80px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 12px;
+          vertical-align: middle
+        }
+
+      }
+      .alarm-right-span {
+        float: right;
+        margin-right: 15px;
+        input {
+          width: 100px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 12px;
+          vertical-align: middle
+        }
+
+        .time_refresh_button_right {
+          width: 80px;
+          height: 25px;
+          line-height: 25px;
+          font-size: 12px;
+          vertical-align: middle;
+        }
+      }
+    }
+
+    //表格区域
+    .alarm-list {
+      width: 100%;
+      background-color: salmon;
+    }
+  }
+}
+
+//弹窗详情区域
+
+.alarm-details-list {
+  width: 100%;
+  height: 170px;
+  background-color: #ffffff;
+  overflow-y: auto;
+  .alarm-details-left {
+    width: 300px;
+    margin-left: 20px;
+    margin-top: 5px;
+    line-height: 22px;
+    float: left;
+    word-break: break-all;
+    ul {
+      margin-left: 30px;
+      list-style-type: none;
+    }
+  }
+  .alarm-details-list-main {
+    width: 700px;
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 22px;
+    float: left;
+  }
+}
+
+//色块定义
+.alarm-divFont {
+  width: 45px;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+  margin:auto;
+  text-align: center;
+  .divFont{
+    text-align: right;
+  }
+}
+.alarm-divRed {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  float: left;
+   background-color: red;
+}
+.alarm-divOrange {
+  @extend .alarm-divRed;
+  background-color: Orange;
+}
+.alarm-divYellow {
+  @extend .alarm-divRed;
+  background-color: yellow;
+}
+.alarm-divGreen {
+  @extend .alarm-divRed;
+  background-color: blue;
+}
+
+textarea {
+  resize: none;
+}

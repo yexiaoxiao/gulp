@@ -1,5 +1,6 @@
 var gulp = require('gulp'),  
-    sass = require('gulp-ruby-sass'),
+    // sass = require('gulp-ruby-sass'),
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
     jshint = require('gulp-jshint'),
@@ -12,19 +13,29 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload');
 
-// scss压缩转换，有bug lodash版本过低
-gulp.task('styles', function() {  
-  return gulp.src('src/style/*.scss')
-// .pipe(sass({ style: 'expanded' }))  bug
+// scss压缩转换，有bug lodash版本过低  用gulp-ruby-sass
+// gulp.task('styles', function() {  
+//   return gulp.src('src/style/*.scss')
+//    .pipe(sass({ style: 'expanded' }))  //bug
+//     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
+//     .pipe(gulp.dest('dist/assets/css'))
+//     .pipe(rename({suffix: '.min'}))
+//     .pipe(minifycss())
+//     .pipe(gulp.dest('dist/assets/css'))
+//     .pipe(notify({ message: 'Styles task complete' }));
+    
+// });
+
+gulp.task('sass', function () {
+  gulp.src('src/css/*.scss')
+    .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('dist/assets/css'))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest('dist/assets/css'))
-    .pipe(notify({ message: 'Styles task complete' }));
-    
+    .pipe(gulp.dest('dist/assets/css'));
 });
-
+ 
 
 // js压缩
 gulp.task('scripts', function() {  
@@ -56,14 +67,15 @@ gulp.task('clean', function() {
 // 预设任务   我们可以建立一个预设任务，当只输入$ gulp指令时执行的任务，这裡执行三个我们所建立的任务:
 
 gulp.task('default', ['clean'], function() {  
-    gulp.start('styles', 'scripts', 'images');
+    gulp.start('sass', 'scripts', 'images');
 });
 
 // 看守  为了能够看守档案，并在更动发生后执行相关任务，首先需要建立一个新的任务，使用gulp.watchAPI来看守档案:
 gulp.task('watch', function() {
 
   // 看守所有.scss档
-  gulp.watch('src/styles/**/*.scss', ['styles']);
+  // gulp.watch('src/styles/**/*.scss', ['styles']); //gulp-ruby-sass写法
+    gulp.watch('src/css/*.scss', ['sass']);
 
   // 看守所有.js档
   gulp.watch('src/scripts/**/*.js', ['scripts']);

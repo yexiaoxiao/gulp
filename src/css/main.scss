@@ -1,4 +1,7 @@
-
+@import "setting";
+@import "setting-event";
+@import "setting-map";
+@import "global";
 html,body,.wrap,.sign{
   height: 100%;
 }
@@ -13,7 +16,7 @@ html,body,.wrap,.sign{
     padding: 5px 0;
   }
   .sign-panel{
-    @include BorderRadius(10px);
+    
     background-color: #F7F8F7;
     width: 400px;
     margin-left: auto;
@@ -42,5 +45,12 @@ html,body,.wrap,.sign{
     input{
       margin:0 10px
     }
+    button{
+      left:10px
+    }
+    form{
+      margin: 10px;
+    }
+
   }
 }
