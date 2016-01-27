@@ -14,7 +14,7 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload');
 
 gulp.task('sass', function () {
-  gulp.src('src/css/*.scss')
+return  gulp.src('src/css/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
     .pipe(gulp.dest('src/sprite/'))
